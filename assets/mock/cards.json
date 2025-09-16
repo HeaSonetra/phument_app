@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "cardNumber": "4532 1234 5678 9012",
+    "cardHolder": "John Doe",
+    "expiryDate": "12/26",
+    "cvv": "123",
+    "cardType": "debit",
+    "bankName": "Techey Bank",
+    "isActive": true,
+    "isFrozen": false,
+    "dailyLimit": "5000.00",
+    "monthlyLimit": "15000.00",
+    "availableBalance": "2500.00",
+    "currency": "USD",
+    "gradientStart": "#00695C",
+    "gradientEnd": "#004D40"
+  },
+  {
+    "id": "2",
+    "cardNumber": "5555 1234 5678 9012",
+    "cardHolder": "John Doe",
+    "expiryDate": "08/27",
+    "cvv": "456",
+    "cardType": "credit",
+    "bankName": "Techey Bank",
+    "isActive": true,
+    "isFrozen": false,
+    "creditLimit": "10000.00",
+    "availableCredit": "7500.00",
+    "currency": "USD",
+    "gradientStart": "#1976D2",
+    "gradientEnd": "#0D47A1"
+  },
+  {
+    "id": "3",
+    "cardNumber": "4000 1234 5678 9012",
+    "cardHolder": "John Doe",
+    "expiryDate": "03/25",
+    "cvv": "789",
+    "cardType": "debit",
+    "bankName": "Techey Bank",
+    "isActive": true,
+    "isFrozen": true,
+    "dailyLimit": "2000.00",
+    "monthlyLimit": "8000.00",
+    "availableBalance": "850.75",
+    "currency": "USD",
+    "gradientStart": "#7B1FA2",
+    "gradientEnd": "#4A148C"
+  }
+]

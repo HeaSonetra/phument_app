@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "category": "utilities",
+    "categoryName": "Utilities",
+    "providers": [
+      {
+        "id": "1",
+        "name": "Electric Company",
+        "logo": "assets/images/providers/electric.png",
+        "isActive": true
+      },
+      {
+        "id": "2",
+        "name": "Water Authority",
+        "logo": "assets/images/providers/water.png",
+        "isActive": true
+      },
+      {
+        "id": "3",
+        "name": "Gas Company",
+        "logo": "assets/images/providers/gas.png",
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "category": "internet",
+    "categoryName": "Internet & TV",
+    "providers": [
+      {
+        "id": "4",
+        "name": "CableVision",
+        "logo": "assets/images/providers/cable.png",
+        "isActive": true
+      },
+      {
+        "id": "5",
+        "name": "FiberNet",
+        "logo": "assets/images/providers/fiber.png",
+        "isActive": true
+      },
+      {
+        "id": "6",
+        "name": "Satellite TV",
+        "logo": "assets/images/providers/satellite.png",
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "category": "mobile",
+    "categoryName": "Mobile & Telecom",
+    "providers": [
+      {
+        "id": "7",
+        "name": "MobileNet",
+        "logo": "assets/images/providers/mobile.png",
+        "isActive": true
+      },
+      {
+        "id": "8",
+        "name": "DataCom",
+        "logo": "assets/images/providers/data.png",
+        "isActive": true
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "category": "insurance",
+    "categoryName": "Insurance",
+    "providers": [
+      {
+        "id": "9",
+        "name": "Health Insurance Co",
+        "logo": "assets/images/providers/health.png",
+        "isActive": true
+      },
+      {
+        "id": "10",
+        "name": "Auto Insurance",
+        "logo": "assets/images/providers/auto.png",
+        "isActive": true
+      }
+    ]
+  }
+]

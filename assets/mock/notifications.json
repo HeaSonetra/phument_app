@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Transaction Successful",
+    "message": "Your transfer of $100.00 to John Smith has been completed successfully.",
+    "type": "transaction",
+    "isRead": false,
+    "timestamp": "2024-01-15T10:30:00Z",
+    "icon": "check_circle",
+    "color": "success"
+  },
+  {
+    "id": "2",
+    "title": "Bill Payment Reminder",
+    "message": "Your electricity bill of $89.25 is due in 3 days. Pay now to avoid late fees.",
+    "type": "reminder",
+    "isRead": false,
+    "timestamp": "2024-01-14T15:45:00Z",
+    "icon": "schedule",
+    "color": "warning"
+  },
+  {
+    "id": "3",
+    "title": "New Feature Available",
+    "message": "Check out our new QR payment feature! Scan and pay with ease.",
+    "type": "promo",
+    "isRead": true,
+    "timestamp": "2024-01-13T09:20:00Z",
+    "icon": "qr_code",
+    "color": "info"
+  },
+  {
+    "id": "4",
+    "title": "Security Alert",
+    "message": "We detected a login from a new device. If this wasn't you, please contact support immediately.",
+    "type": "security",
+    "isRead": true,
+    "timestamp": "2024-01-12T16:30:00Z",
+    "icon": "security",
+    "color": "error"
+  },
+  {
+    "id": "5",
+    "title": "Monthly Statement Ready",
+    "message": "Your January 2024 account statement is now available for download.",
+    "type": "statement",
+    "isRead": true,
+    "timestamp": "2024-01-11T14:15:00Z",
+    "icon": "description",
+    "color": "info"
+  },
+  {
+    "id": "6",
+    "title": "Special Offer",
+    "message": "Get 2% cashback on all grocery purchases this month. Terms and conditions apply.",
+    "type": "promo",
+    "isRead": true,
+    "timestamp": "2024-01-10T08:00:00Z",
+    "icon": "local_offer",
+    "color": "success"
+  }
+]

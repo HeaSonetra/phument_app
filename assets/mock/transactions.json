@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "title": "Salary Deposit",
+    "subtitle": "Monthly salary from ABC Corp",
+    "amount": "3,500.00",
+    "currency": "USD",
+    "date": "2024-01-15T10:30:00Z",
+    "type": "credit",
+    "icon": "arrow_downward",
+    "accountId": "1"
+  },
+  {
+    "id": "2",
+    "title": "Grocery Store",
+    "subtitle": "Purchase at SuperMart",
+    "amount": "125.50",
+    "currency": "USD",
+    "date": "2024-01-14T15:45:00Z",
+    "type": "debit",
+    "icon": "shopping_cart",
+    "accountId": "2"
+  },
+  {
+    "id": "3",
+    "title": "Transfer to John",
+    "subtitle": "Payment for dinner",
+    "amount": "45.00",
+    "currency": "USD",
+    "date": "2024-01-14T12:20:00Z",
+    "type": "transfer",
+    "icon": "swap_horiz",
+    "accountId": "1"
+  },
+  {
+    "id": "4",
+    "title": "Electricity Bill",
+    "subtitle": "Monthly utility payment",
+    "amount": "89.25",
+    "currency": "USD",
+    "date": "2024-01-13T09:20:00Z",
+    "type": "bill",
+    "icon": "receipt",
+    "accountId": "2"
+  },
+  {
+    "id": "5",
+    "title": "ATM Withdrawal",
+    "subtitle": "Cash withdrawal at Main St ATM",
+    "amount": "200.00",
+    "currency": "USD",
+    "date": "2024-01-12T16:30:00Z",
+    "type": "debit",
+    "icon": "atm",
+    "accountId": "2"
+  },
+  {
+    "id": "6",
+    "title": "Online Purchase",
+    "subtitle": "Amazon.com order #12345",
+    "amount": "75.99",
+    "currency": "USD",
+    "date": "2024-01-11T14:15:00Z",
+    "type": "debit",
+    "icon": "shopping_bag",
+    "accountId": "1"
+  },
+  {
+    "id": "7",
+    "title": "Interest Payment",
+    "subtitle": "Monthly interest on savings",
+    "amount": "12.50",
+    "currency": "USD",
+    "date": "2024-01-10T08:00:00Z",
+    "type": "credit",
+    "icon": "trending_up",
+    "accountId": "1"
+  },
+  {
+    "id": "8",
+    "title": "Mobile Top-up",
+    "subtitle": "Phone credit recharge",
+    "amount": "25.00",
+    "currency": "USD",
+    "date": "2024-01-09T11:45:00Z",
+    "type": "debit",
+    "icon": "phone_android",
+    "accountId": "2"
+  }
+]

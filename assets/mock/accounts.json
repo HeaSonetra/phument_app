@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "accountNumber": "1234567890",
+    "accountName": "Main Savings Account",
+    "balance": "2,500.00",
+    "currency": "USD",
+    "accountType": "savings",
+    "isActive": true,
+    "lastTransaction": "2024-01-15T10:30:00Z"
+  },
+  {
+    "id": "2",
+    "accountNumber": "0987654321",
+    "accountName": "Checking Account",
+    "balance": "850.75",
+    "currency": "USD",
+    "accountType": "checking",
+    "isActive": true,
+    "lastTransaction": "2024-01-14T15:45:00Z"
+  },
+  {
+    "id": "3",
+    "accountNumber": "1122334455",
+    "accountName": "Business Account",
+    "balance": "15,000.00",
+    "currency": "USD",
+    "accountType": "business",
+    "isActive": true,
+    "lastTransaction": "2024-01-13T09:20:00Z"
+  }
+]
