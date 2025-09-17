@@ -1,7 +1,7 @@
 name: Shorebird OTA Patch
 
 on:
-  workflow_dispatch: {}  # Manual trigger
+  workflow_dispatch: {} # Manual trigger
 
 jobs:
   patch:
@@ -15,7 +15,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-          flutter-version: "3.13.0"  # Make sure Dart 3.8.1+ is included
+          flutter-version: "3.35.4" # Matches local Flutter version with Dart 3.9.2
 
       # Step 3: Setup Shorebird CLI
       - name: Setup Shorebird
@@ -47,6 +47,6 @@ jobs:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
         run: |
           # Patch the latest Shorebird release for this app
-          shorebird patch android --release-version=latest --no-confirm
+          shorebird patch android --release-version=latest --no-confirm --flutter-version=3.35.4
           # If you need a specific release version, comment the line above and use:
-          # shorebird patch android --release-version "1.0.2+4" --no-confirm
+          # shorebird patch android --release-version "1.0.2+4" --no-confirm --flutter-version=3.35.4
