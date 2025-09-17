@@ -43,7 +43,10 @@ android {
 
     buildTypes {
         getByName("release") {
-            signingConfig = signingConfigs.getByName("release")
+            // Only use signing config if keystore file exists
+            if (keystoreProps["storeFile"] != null && file(keystoreProps["storeFile"] as String).exists()) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             isMinifyEnabled = false
             isShrinkResources = false
         }

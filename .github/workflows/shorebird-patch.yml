@@ -13,6 +13,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: "3.24.0"
 
       # Install Shorebird CLI and add to PATH (no "version" input)
       - name: Setup Shorebird
@@ -25,11 +26,16 @@ jobs:
           which shorebird
           shorebird --version
 
+      - name: Clean build cache
+        run: |
+          flutter clean
+          flutter pub get
+
       - name: Create OTA patch
         env:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
         run: |
           # Patch the latest Shorebird release for this app (recommended)
-          shorebird patch android --release-version=latest --no-confirm
+          shorebird patch android --release-version=latest --no-confirm --flutter-version=3.24.0
           # If you need a specific version instead, comment the line above and use:
-          # shorebird patch android --release-version "1.0.2+4" --no-confirm
+          # shorebird patch android --release-version "1.0.2+4" --no-confirm --flutter-version=3.24.0
