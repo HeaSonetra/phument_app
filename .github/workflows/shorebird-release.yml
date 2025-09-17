@@ -52,4 +52,5 @@ jobs:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
         run: |
           # Create a new release (includes both code and asset changes)
-          shorebird release android --flutter-version=3.35.3
+          # Note: This will fail if version already exists. Bump version in pubspec.yaml first.
+          shorebird release android --flutter-version=3.35.3 --no-confirm

@@ -46,7 +46,7 @@ jobs:
         env:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
         run: |
-          # Patch the latest Shorebird release for this app
-          shorebird patch android --release-version=latest --no-confirm
+          # Patch the latest Shorebird release for this app (ignore asset changes)
+          shorebird patch android --release-version=latest --no-confirm --allow-asset-diffs
             # If you need a specific release version, comment the line above and use:
             # shorebird patch android --release-version "1.0.3+5" --no-confirm --flutter-version=3.35.3

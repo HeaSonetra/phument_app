@@ -19,18 +19,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     OnboardingData(
       title: 'Welcome to Phument Vanglin - Updated via Patch!',
       subtitle: 'Your trusted financial partner for all your banking needs',
-      imagePath: 'assets/images/phument.jpg',
+      imagePath: 'assets/images/onboarding_1.png',
     ),
     OnboardingData(
       title: 'Secure & Fast',
       subtitle: 'Bank with confidence using our advanced security features',
-      imagePath: 'assets/images/phument.jpg',
+      imagePath: 'assets/images/onboarding_2.png',
     ),
     OnboardingData(
       title: '24/7 Support',
       subtitle:
           'Get help whenever you need it with our round-the-clock support',
-      imagePath: 'assets/images/phument.jpg',
+      imagePath: 'assets/images/onboarding_3.png',
     ),
   ];
 
