@@ -17,35 +17,31 @@ jobs:
           channel: stable
           flutter-version: "3.13.0"  # Make sure Dart 3.8.1+ is included
 
-      # Step 3: Optional upgrade Flutter
-      - name: Upgrade Flutter
-        run: flutter upgrade
-
-      # Step 4: Setup Shorebird CLI
+      # Step 3: Setup Shorebird CLI
       - name: Setup Shorebird
         uses: shorebirdtech/setup-shorebird@v1
         with:
           cache: true
 
-      # Step 5: Verify Shorebird installation
+      # Step 4: Verify Shorebird installation
       - name: Verify Shorebird
         run: |
           which shorebird
           shorebird --version
 
-      # Step 6: Clean build cache and get dependencies
+      # Step 5: Clean build cache and get dependencies
       - name: Clean build cache
         run: |
           flutter clean
           flutter pub get
 
-      # Step 7: Check Flutter & Dart version
+      # Step 6: Check Flutter & Dart version
       - name: Check Flutter & Dart version
         run: |
           flutter --version
           dart --version
 
-      # Step 8: Create OTA patch
+      # Step 7: Create OTA patch
       - name: Create OTA patch
         env:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
