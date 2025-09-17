@@ -17,7 +17,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
   final List<OnboardingData> _onboardingData = [
     OnboardingData(
-      title: 'Welcome to Phument Vanglin',
+      title: 'Welcome to Phument Vanglin - Updated via Patch!',
       subtitle: 'Your trusted financial partner for all your banking needs',
       imagePath: 'assets/images/phument.jpg',
     ),

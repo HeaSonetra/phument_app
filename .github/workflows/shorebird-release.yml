@@ -1,0 +1,55 @@
+name: Shorebird Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_bump:
+        description: "Version bump type"
+        required: true
+        default: "patch"
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout code
+      - uses: actions/checkout@v4
+
+      # Step 2: Setup Flutter
+      - name: Setup Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.35.3" # Supported by Shorebird
+
+      # Step 3: Setup Shorebird CLI
+      - name: Setup Shorebird
+        uses: shorebirdtech/setup-shorebird@v1
+        with:
+          cache: true
+
+      # Step 4: Verify installations
+      - name: Verify installations
+        run: |
+          flutter --version
+          dart --version
+          shorebird --version
+
+      # Step 5: Clean build cache
+      - name: Clean build cache
+        run: |
+          flutter clean
+          flutter pub get
+
+      # Step 6: Create Shorebird release
+      - name: Create Shorebird release
+        env:
+          SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
+        run: |
+          # Create a new release (includes both code and asset changes)
+          shorebird release android --flutter-version=3.35.3
