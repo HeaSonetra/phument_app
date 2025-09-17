@@ -13,7 +13,7 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-          flutter-version: "3.24.0"
+          flutter-version: "3.13.0"
 
       # Install Shorebird CLI and add to PATH (no "version" input)
       - name: Setup Shorebird
