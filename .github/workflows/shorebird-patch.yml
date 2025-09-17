@@ -1,31 +1,24 @@
 name: Shorebird OTA Patch
 
 on:
-  workflow_dispatch:
-    inputs:
-      release_version:
-        description: "Release version to patch (default: current)"
-        required: false
-        default: "current"
-        type: string
+  workflow_dispatch: {}
 
 jobs:
   patch:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: stable
-          flutter-version: "3.24.0"
 
+      # Install Shorebird CLI and add to PATH (no "version" input)
       - name: Setup Shorebird
         uses: shorebirdtech/setup-shorebird@v1
         with:
-          version: latest
+          cache: true
 
       - name: Verify Shorebird
         run: |
@@ -36,4 +29,7 @@ jobs:
         env:
           SHOREBIRD_TOKEN: ${{ secrets.SHOREBIRD_TOKEN }}
         run: |
-          shorebird patch android --force --release-version ${{ inputs.release_version }}
+          # Patch the latest Shorebird release for this app (recommended)
+          shorebird patch android --release-version=latest --no-confirm
+          # If you need a specific version instead, comment the line above and use:
+          # shorebird patch android --release-version "1.0.2+4" --no-confirm
